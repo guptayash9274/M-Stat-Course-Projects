@@ -4,7 +4,7 @@
     <title>Cointegrated Processes</title>
     <meta charset="utf-8" />
     <meta name="author" content="Harsh Gupta | Saransh Gupta | Yash Gupta" />
-    <meta name="date" content="2024-04-24" />
+    <meta name="date" content="2024-10-12" />
     <script src="libs/header-attrs-2.25/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
@@ -26,7 +26,7 @@ class: center, middle, inverse, title-slide
 ### Indian Statistical Institute, Kolkata
 ]
 .date[
-### 2024-04-24
+### 2024-10-12
 ]
 
 ---
@@ -89,7 +89,7 @@ class: center, middle, inverse, title-slide
   
 --
 
-&lt;img src="Structural Break.png" width="484" style="display: block; margin: auto;" /&gt;
+&lt;img src="snipsgoldsilver/Structural Break.png" width="484" style="display: block; margin: auto;" /&gt;
 
   
 --
@@ -203,7 +203,7 @@ adfg1 &lt;- ur.df(gold_ts, type = "trend", selectlags = c("BIC"))
 summary(adfg1)
 ```
 
-&lt;img src="Gold_ADF.JPG" width="50%" /&gt;
+&lt;img src="snipsgoldsilver/Gold_ADF.JPG" width="50%" /&gt;
 
 `$$\text{Null NOT Rejected }(p=0.75) \implies \text{Series has Unit Root}$$`
 
@@ -216,7 +216,7 @@ adfg2 &lt;- ur.df(diff(gold_ts), selectlags = c("BIC"))
 summary(adfg2)
 ```
 
-&lt;img src="Gold_Diff_ADF.JPG" width="50%" /&gt;
+&lt;img src="snipsgoldsilver/Gold_Diff_ADF.JPG" width="50%" /&gt;
 
 `$$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$`
 
@@ -232,7 +232,7 @@ adfs1 &lt;- ur.df(gold_ts, type = "trend", selectlags = c("BIC"))
 summary(adfs1)
 ```
 
-&lt;img src="Silver_ADF.JPG" width="50%" /&gt;
+&lt;img src="snipsgoldsilver/Silver_ADF.JPG" width="50%" /&gt;
 `$$\text{Null NOT Rejected }(p=0.63) \implies \text{Series has Unit Root}$$`
 
 
@@ -246,7 +246,7 @@ summary(adfs2)
 ```
 
 
-&lt;img src="Silver_Diff_ADF.JPG" width="50%" /&gt;
+&lt;img src="snipsgoldsilver/Silver_Diff_ADF.JPG" width="50%" /&gt;
 
 `$$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$`
 
@@ -314,7 +314,7 @@ summary(error.gold.silver)
 ecm.silver &lt;- lm(silver.d ~ error.ecm1 + gold.d1 + silver.d1)
 ```
 
-&lt;img src="Gold_Silver_ECM.jpg" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="snipsgoldsilver/Gold_Silver_ECM.jpg" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
 
 - Coefficient of `\(\delta_2\)` from ECM model is significant
 
@@ -362,7 +362,7 @@ plot.ts(cbind(gold_ts, copper_ts), plot.type = "single", ylab = "",
     col = 4:3)
 ```
 
-&lt;img src="Gold_Copper_Line_Chart.JPG" width="60%" height="20%" style="display: block; margin: auto;" /&gt;
+&lt;img src="snipsgoldsilver/Gold_Copper_Line_Chart.JPG" width="60%" height="20%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -375,7 +375,7 @@ summary(adfc1)
 ```
 
 
-&lt;img src="Copper_ADF_Test.jpg" width="60%" height="20%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="snipsgoldsilver/Copper_ADF_Test.jpg" width="60%" height="20%" style="display: block; margin: auto auto auto 0;" /&gt;
 
 
 `$$\text{Null NOT Rejected }(p=0.65) \implies \text{Series has Unit Root}$$`
@@ -389,7 +389,7 @@ summary(adfc1)
 adfc2 &lt;- ur.df(diff(copper_ts), selectlags = c("BIC"))
 ```
 
-&lt;img src="Copper_ADF_Test(diff).jpg" width="60%" /&gt;
+&lt;img src="snipsgoldsilver/Copper_ADF_Test(diff).jpg" width="60%" /&gt;
 
 `$$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$`
 
@@ -419,14 +419,14 @@ plot.ts(gold.copper.eq$residuals)
 error.gold.copper &lt;- ur.df(gold.copper.eq$residuals, type = "trend", selectlags = c("BIC"))
 ```
 
-&lt;img src="Gold_Copper_Residual_ADF_Test.JPG" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
+&lt;img src="snipsgoldsilver/Gold_Copper_Residual_ADF_Test.JPG" width="70%" style="display: block; margin: auto auto auto 0;" /&gt;
 
 
 `$$\text{Null NOT Rejected } \implies \text{Residual has UNIT ROOT } \implies \textbf{NO} \text{ Cointegration}$$`
 
 ---
 
-&lt;img src="TY2.jpg" width="1200" /&gt;
+&lt;img src="snipsgoldsilver/TY2.jpg" width="1200" /&gt;
 
 ---
 

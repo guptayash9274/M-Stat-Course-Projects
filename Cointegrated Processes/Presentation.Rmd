@@ -79,7 +79,7 @@ library(vars)
 --
 
 ```{r, fig.align='center', echo=FALSE}
-knitr::include_graphics("Structural Break.png")
+knitr::include_graphics("snipsgoldsilver/Structural Break.png")
 ```
 
   
@@ -201,7 +201,7 @@ summary(adfg1)
 ```
 
 ```{r, echo=FALSE, out.width="50%"}
-knitr::include_graphics("Gold_ADF.JPG")
+knitr::include_graphics("snipsgoldsilver/Gold_ADF.JPG")
 ```
 
 $$\text{Null NOT Rejected }(p=0.75) \implies \text{Series has Unit Root}$$
@@ -215,7 +215,7 @@ summary(adfg2)
 ```
 
 ```{r, echo=FALSE, out.width="50%"}
-knitr::include_graphics("Gold_Diff_ADF.JPG")
+knitr::include_graphics("snipsgoldsilver/Gold_Diff_ADF.JPG")
 ```
 
 $$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$
@@ -232,7 +232,7 @@ summary(adfs1)
 ```
 
 ```{r, echo=FALSE, out.width="50%"}
-knitr::include_graphics("Silver_ADF.JPG")
+knitr::include_graphics("snipsgoldsilver/Silver_ADF.JPG")
 ```
 $$\text{Null NOT Rejected }(p=0.63) \implies \text{Series has Unit Root}$$
 
@@ -247,7 +247,7 @@ summary(adfs2)
 
 
 ```{r, echo=FALSE, out.width="50%"}
-knitr::include_graphics("Silver_Diff_ADF.JPG")
+knitr::include_graphics("snipsgoldsilver/Silver_Diff_ADF.JPG")
 ```
 
 $$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$
@@ -318,7 +318,7 @@ ecm.silver <- lm(silver.d ~ error.ecm1 + gold.d1 + silver.d1)
 ```
 
 ```{r, echo=FALSE, fig.align='left', out.width="70%"}
-knitr::include_graphics("Gold_Silver_ECM.jpg")
+knitr::include_graphics("snipsgoldsilver/Gold_Silver_ECM.jpg")
 ```
 
 - Coefficient of $\delta_2$ from ECM model is significant
@@ -370,7 +370,7 @@ plot.ts(cbind(gold_ts, copper_ts), plot.type = "single", ylab = "",
 ```
 
 ```{r, echo=FALSE, fig.align = 'center', out.height="20%", out.width="60%"}
-knitr::include_graphics("Gold_Copper_Line_Chart.JPG")
+knitr::include_graphics("snipsgoldsilver/Gold_Copper_Line_Chart.JPG")
 ```
 
 ---
@@ -384,7 +384,7 @@ summary(adfc1)
 
 
 ```{r, echo=FALSE, fig.align='left', out.width="60%", out.height="20%"}
-knitr::include_graphics("Copper_ADF_Test.jpg")
+knitr::include_graphics("snipsgoldsilver/Copper_ADF_Test.jpg")
 ```
 
 
@@ -399,7 +399,7 @@ adfc2 <- ur.df(diff(copper_ts), selectlags = c("BIC"))
 ```
 
 ```{r, echo=FALSE, , out.width="60%"}
-knitr::include_graphics("Copper_ADF_Test(diff).jpg")
+knitr::include_graphics("snipsgoldsilver/Copper_ADF_Test(diff).jpg")
 ```
 
 $$\text{Null Rejected }(p = 0.01) \implies \text{First Difference STATIONARY}$$
@@ -431,7 +431,7 @@ error.gold.copper <- ur.df(gold.copper.eq$residuals, type = "trend", selectlags 
 ```
 
 ```{r, echo=FALSE, fig.align='left', out.width="70%"}
-knitr::include_graphics("Gold_Copper_Residual_ADF_Test.JPG")
+knitr::include_graphics("snipsgoldsilver/Gold_Copper_Residual_ADF_Test.JPG")
 ```
 
 
@@ -440,7 +440,7 @@ $$\text{Null NOT Rejected } \implies \text{Residual has UNIT ROOT } \implies \te
 ---
 
 ```{r, echo=FALSE}
-knitr::include_graphics("TY2.jpg")
+knitr::include_graphics("snipsgoldsilver/TY2.jpg")
 ```
 
 ---
