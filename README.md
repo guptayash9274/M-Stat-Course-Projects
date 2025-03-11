@@ -119,4 +119,4 @@
 ## 🌟 **Let’s Connect!**  
 *Open to collaborations, discussions, and opportunities in data science and statistics!*  
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=LinkedIn)](https://linkedin.com/in/your-profile)  [![Email](https://img.shields.io/badge/-Email-D14836?logo=Gmail)](mailto:guptayash1204@gmail.com)  [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=GitHub)](https://github.com/your-username)  [![Portfolio](https://img.shields.io/badge/-Portfolio-4285F4?logo=GoogleChrome&logoColor=white)](https://your-portfolio-website.com)  
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=LinkedIn)](https://linkedin.com/in/your-profile)  [![Email](https://img.shields.io/badge/-Email-D14836?logo=Gmail)](mailto:guptayash1204@gmail.com)  [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=GitHub)](https://github.com/your-username)  [![Portfolio](https://img.shields.io/badge/-Portfolio-4285F4?logo=GoogleChrome&logoColor=white)](https://guptayash9274.github.io/)  
