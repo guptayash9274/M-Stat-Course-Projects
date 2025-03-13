@@ -17,7 +17,7 @@
 
 ### **Key Contributions**  
   - Derived test statistics for specific distributions.
-  - Developed new non-parametric tests to assess the significance of the scale parameter, improving existing tests for location parameters.
+  - Developed new non-parametric tests to assess the significance of the scale parameter, by modifying existing tests for location parameters.
 
 **[View Presentation](https://guptayash9274.github.io/LMP_Rank_Tests_for_Scale_NPI/)** 
 
